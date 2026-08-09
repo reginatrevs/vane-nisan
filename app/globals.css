@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Palette lifted from the wireframe --- */
+  --color-paper: #fdfcf7;
+  --color-paper-warm: #f6f2e8;
+
+  --color-navy: #3a4a7c;
+  --color-navy-deep: #2b3563;
+  --color-navy-soft: #6274a3;
+
+  --color-khaki: #a89b6d;
+  --color-khaki-deep: #8b7d4f;
+
+  --color-cocoa: #6a4a31;
+  --color-cocoa-deep: #4e3421;
+
+  --font-display: var(--font-display), "Bodoni 72", serif;
+  --font-serif: var(--font-serif), "EB Garamond", Georgia, serif;
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-navy-deep);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Consistent focus ring */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-navy);
+  color: var(--color-paper);
+}
