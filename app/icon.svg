@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>Engagement ring</title>
+  <!-- Band: sits low so the stone has room above it. Stroke is deliberately
+       heavy — at 16px anything thinner dissolves into the tab bar. -->
+  <circle cx="16" cy="20.5" r="8" fill="none" stroke="#a89b6d" stroke-width="3" />
+  <!-- Stone: a simple marquise/diamond silhouette in the site navy, with a
+       khaki outline so it stays legible against dark browser themes. -->
+  <path
+    d="M16 2.5 21 8 16 13.5 11 8Z"
+    fill="#3a4a7c"
+    stroke="#a89b6d"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+  <!-- Facet highlight. -->
+  <path d="M16 2.5 18.5 8 16 13.5Z" fill="#4d5f93" />
+</svg>
