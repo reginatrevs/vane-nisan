@@ -24,8 +24,10 @@ export function Masthead() {
       />
 
       {/* Pills sit close under the botanical arch; the breathing room goes
-          below them, before the calligraphy. */}
-      <div className="px-6 pb-14 pt-2 sm:pb-20 sm:pt-3">
+          below them, before the calligraphy. Kept tighter on phones so the
+          calligraphy and the frames still land on the first screen once
+          browser chrome has taken its cut. */}
+      <div className="px-6 pb-9 pt-2 sm:pb-20 sm:pt-3">
         <LanguageSwitcher className="flex justify-center" />
       </div>
 
@@ -48,14 +50,34 @@ export function Masthead() {
           }
         />
 
-        {/* Decorative — the calligraphy above already announces the names. */}
-        <AssetImage
-          asset={assets.photos}
-          alt=""
-          eager
-          sizes="(min-width: 640px) 620px, 100vw"
-          className="mt-2 h-auto w-full max-w-[360px] sm:mt-4 sm:max-w-[620px]"
-        />
+        {/* Arrives just after the calligraphy has settled, so the two read as
+            one gesture rather than appearing at once. */}
+        <motion.div
+          initial={reduced ? false : { opacity: 0, y: 26, scale: 0.96 }}
+          animate={reduced ? undefined : { opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 1.2, ease: EASE, delay: 0.45 }}
+          className="mt-9 w-full max-w-[360px] sm:mt-12 sm:max-w-[620px]"
+        >
+          {/* Nested so the endless drift doesn't fight the entrance above.
+              The frames sway like something pinned to a wall. */}
+          <motion.div
+            animate={
+              reduced ? undefined : { y: [0, -8, 0], rotate: [0, -0.7, 0] }
+            }
+            transition={{ duration: 7, ease: "easeInOut", repeat: Infinity }}
+            whileHover={reduced ? undefined : { scale: 1.035, rotate: 0.9 }}
+            whileTap={reduced ? undefined : { scale: 0.975, rotate: -0.9 }}
+          >
+            {/* Decorative — the calligraphy above already announces the names. */}
+            <AssetImage
+              asset={assets.photos}
+              alt=""
+              eager
+              sizes="(min-width: 640px) 620px, 100vw"
+              className="h-auto w-full"
+            />
+          </motion.div>
+        </motion.div>
       </motion.div>
     </header>
   );
