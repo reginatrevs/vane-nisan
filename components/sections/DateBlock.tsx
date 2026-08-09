@@ -43,7 +43,7 @@ export function DateBlock() {
   return (
     <section
       id="details"
-      className="bg-paper px-6 pb-14 pt-10 text-center sm:pb-20 sm:pt-16"
+      className="bg-paper px-6 pb-14 pt-16 text-center sm:pb-20 sm:pt-24"
     >
       <div className="mx-auto max-w-4xl">
         <Reveal>
