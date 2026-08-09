@@ -2,7 +2,9 @@
 
 @theme {
   /* --- Palette lifted from the wireframe --- */
-  --color-paper: #fdfcf7;
+  /* Pure white, not off-white: the artwork's arch borders are #ffffff, so
+     any tint here shows up as a seam where the images meet the page. */
+  --color-paper: #ffffff;
   --color-paper-warm: #f6f2e8;
 
   --color-navy: #3a4a7c;
