@@ -43,13 +43,13 @@ export const assets = {
   },
 
   /**
-   * Illustrated couple holding the framed photos.
+   * The couple's photos.
    * → /public/assets/photos.png
    */
   photos: {
     src: "/assets/photos.png",
-    width: 1800,
-    height: 1649,
+    width: 1597,
+    height: 1047,
   },
 
   /**
