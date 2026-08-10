@@ -28,7 +28,7 @@ const en = {
       "Join us as we celebrate our engagement. Reserve your place.",
   },
   invite: {
-    line: "We would love to see you in our happy day",
+    line: "We would love to see you in our engagement ceremony",
     scroll: "Scroll",
   },
   details: {
@@ -112,7 +112,7 @@ const es: Dict = {
       "Acompáñanos a celebrar nuestro compromiso. Reserva tu lugar.",
   },
   invite: {
-    line: "Nos encantaría que nos acompañaras en nuestro día especial",
+    line: "Nos encantaría que nos acompañaras en nuestra fiesta de compromiso",
     scroll: "Desliza",
   },
   details: {
@@ -186,7 +186,7 @@ const tr: Dict = {
     description: "Nişanımızı birlikte kutlayalım. Yerinizi ayırtın.",
   },
   invite: {
-    line: "Bu mutlu günümüzde sizi aramızda görmekten mutluluk duyarız",
+    line: "Sizlerin, kutsal aile birliğimizin tesisinden önceki ilk adım olan nişan yemeğimize teşrifleri bizi ziyadesiyle mutlu edecektir.",
     scroll: "Kaydır",
   },
   details: {
