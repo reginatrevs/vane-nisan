@@ -47,9 +47,7 @@ export function DateBlock() {
     >
       <div className="mx-auto max-w-4xl">
         <Reveal>
-          {/* pre-line honours the \n some translations use to pin their line
-              break on narrow screens; wide screens wrap naturally instead. */}
-          <p className="whitespace-pre-line font-body text-[clamp(1.05rem,4.1vw,1.75rem)] font-light tracking-wide text-navy sm:whitespace-normal">
+          <p className="font-body text-[clamp(1.05rem,4.1vw,1.75rem)] font-light tracking-wide text-navy">
             {t.invite.line}
           </p>
         </Reveal>

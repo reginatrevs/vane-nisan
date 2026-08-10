@@ -112,8 +112,7 @@ const es: Dict = {
       "Acompáñanos a celebrar nuestro compromiso. Reserva tu lugar.",
   },
   invite: {
-    /** The \n breaks after "nuestra" on phones; wide screens ignore it. */
-    line: "Nos encantaría verte en nuestra\nfiesta de compromiso",
+    line: "Nos encantaría que nos acompañaras en nuestra fiesta de compromiso",
     scroll: "Desliza",
   },
   details: {
